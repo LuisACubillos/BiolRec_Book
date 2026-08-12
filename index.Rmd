@@ -29,7 +29,7 @@ Los análisis y gráficos se realizan con datos de SERNAPESCA y SUBPESCA, dispon
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-  echo = TRUE,
+  echo = FALSE,
   warning = FALSE,
   message = FALSE,
   fig.align = "center",
