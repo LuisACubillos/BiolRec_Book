@@ -303,7 +303,7 @@ Los **PBR** son valores estandarizados que permiten determinar el estado de situ
   </tr>
   <tr>
    <td style="text-align:left;width: 25%; font-weight: bold;"> Mortalidad por pesca (F) </td>
-   <td style="text-align:left;"> Fracción de la biomasa que muere anualmente por causa de la pesca. </td>
+   <td style="text-align:left;"> Tasa instantánea de mortalidad anual por causa de la pesca. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 25%; font-weight: bold;"> RMS </td>
@@ -327,7 +327,7 @@ Los **PBR** son valores estandarizados que permiten determinar el estado de situ
   </tr>
   <tr>
    <td style="text-align:left;width: 25%; font-weight: bold;"> CCT </td>
-   <td style="text-align:left;"> Comité Científico Técnico Pesquero: órgano asesor que define el estado de situación y los PBR. </td>
+   <td style="text-align:left;"> Comité Científico Técnico Pesquero: órgano asesor que define el estado de situación, los PBR, y recomienda el rango de captura biológicamente aceptable. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 25%; font-weight: bold;"> Pesquería tipo 'S' </td>
@@ -343,7 +343,7 @@ Los **PBR** son valores estandarizados que permiten determinar el estado de situ
   </tr>
   <tr>
    <td style="text-align:left;width: 25%; font-weight: bold;"> Reclutamiento </td>
-   <td style="text-align:left;"> Individuos jóvenes que se incorporan al stock explotable al alcanzar la talla/edad de primera captura. </td>
+   <td style="text-align:left;"> Individuos jóvenes que se incorporan al stock explotable. </td>
   </tr>
   <tr>
    <td style="text-align:left;width: 25%; font-weight: bold;"> Unidad de pesquería </td>
