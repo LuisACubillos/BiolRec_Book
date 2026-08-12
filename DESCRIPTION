@@ -1,0 +1,12 @@
+Package: BiolRecBook
+Title: Biologia de Recursos Pesqueros
+Version: 0.0.1
+Imports:
+    bookdown,
+    ggplot2,
+    dplyr,
+    tidyr,
+    scales,
+    knitr,
+    kableExtra,
+    rmarkdown
