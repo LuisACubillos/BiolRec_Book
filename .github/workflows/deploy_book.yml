@@ -22,13 +22,6 @@ jobs:
       - name: Set up Pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
-      - name: Cache R packages
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('DESCRIPTION') }}-1
-          restore-keys: ${{ runner.os }}-r-
-
       - name: Install system dependencies
         run: |
           sudo apt-get update
@@ -37,17 +30,7 @@ jobs:
             libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
 
       - name: Install R packages
-        run: |
-          Rscript -e "install.packages(c(
-            'bookdown',
-            'ggplot2',
-            'dplyr',
-            'tidyr',
-            'scales',
-            'knitr',
-            'kableExtra',
-            'rmarkdown'
-          ), repos = 'https://cran.rstudio.com')"
+        run: Rscript -e "install.packages(c('bookdown','rmarkdown','knitr','ggplot2','dplyr','tidyr','scales','kableExtra'), repos='https://cran.rstudio.com', Ncpus=2)"
 
       - name: Build book
         run: |
