@@ -1,11 +1,10 @@
 ---
 title: "Biología de Recursos Pesqueros"
 author: "Luis Cubillos"
-date: "Universidad de Concepción, 2025"
+date: "Universidad de Concepción, 2026"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: referencias.bib
-csl: apa.csl
 link-citations: yes
 description: "Apuntes y guías de estudio de la asignatura Biología de Recursos Pesqueros, Universidad de Concepción."
 ---
