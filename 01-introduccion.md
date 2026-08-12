@@ -188,11 +188,6 @@ La principal herramienta de gestión para pesquerías tipo "S" en Chile son las 
 
 ### Desembarque nacional 2015–2025
 
-
-```
-## `geom_smooth()` using formula = 'y ~ x'
-```
-
 <div class="figure">
 <img src="01-introduccion_files/figure-html/desembarques-fig-1.png" alt="Desembarque total de peces en Chile, 2015-2025. Fuente: SERNAPESCA 2025" width="672" />
 <p class="caption">(\#fig:desembarques-fig)Desembarque total de peces en Chile, 2015-2025. Fuente: SERNAPESCA 2025</p>
