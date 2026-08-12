@@ -1,0 +1,108 @@
+/* ================================================
+   Biología de Recursos Pesqueros — Book Styles
+   Universidad de Concepción
+   ================================================ */
+
+/* --- Fuentes y colores base --- */
+:root {
+  --udec-blue: #003B71;
+  --udec-gold: #C8A951;
+  --text-dark: #2c2c2c;
+  --text-muted: #6c757d;
+  --bg-light: #f8f9fa;
+  --border-color: #dee2e6;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--text-dark);
+  line-height: 1.75;
+}
+
+/* --- Encabezados --- */
+h1, h2, h3, h4 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--udec-blue);
+  font-weight: 600;
+}
+
+h1 { border-bottom: 3px solid var(--udec-gold); padding-bottom: 0.3em; }
+h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 0.2em; }
+
+/* --- Tabla de contenidos --- */
+.book .book-summary {
+  background-color: #fafafa;
+  border-right: 1px solid var(--border-color);
+}
+
+.book .book-summary ul.summary li a {
+  color: var(--text-dark);
+  padding: 6px 15px;
+}
+
+.book .book-summary ul.summary li.active > a {
+  color: var(--udec-blue);
+  font-weight: bold;
+  border-left: 3px solid var(--udec-gold);
+}
+
+/* --- Código --- */
+pre {
+  background-color: #f4f4f4;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 0.88em;
+}
+
+code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* --- Tablas --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95em;
+}
+
+thead {
+  background-color: var(--udec-blue);
+  color: white;
+}
+
+th, td {
+  padding: 10px 14px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+tr:nth-child(even) { background-color: var(--bg-light); }
+tr:hover { background-color: #e8f0fb; }
+
+/* --- Cajas de atención --- */
+.callout-box {
+  background-color: #eaf3fb;
+  border-left: 4px solid var(--udec-blue);
+  padding: 12px 16px;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* --- Figuras --- */
+figure { text-align: center; margin: 2em auto; }
+figcaption { color: var(--text-muted); font-size: 0.88em; margin-top: 0.5em; }
+
+/* --- Footer --- */
+.page-footer {
+  font-size: 0.82em;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  padding-top: 1em;
+  margin-top: 3em;
+}

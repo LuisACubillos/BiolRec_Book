@@ -1,0 +1,30 @@
+---
+title: "Biología de Recursos Pesqueros"
+author: "Luis Cubillos"
+date: "Universidad de Concepción, 2026"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: referencias.bib
+link-citations: yes
+description: "Apuntes y guías de estudio de la asignatura Biología de Recursos Pesqueros, Universidad de Concepción."
+---
+
+# Prefacio {-}
+
+Este libro reúne los apuntes, guías de estudio y materiales de la asignatura **Biología de Recursos Pesqueros** dictada en la Universidad de Concepción.
+
+El contenido se organiza por semana de clases y cubre los principales temas del curso: dinámica poblacional de recursos pesqueros, demografía, mortalidad, reclutamiento, evaluación de stocks y gestión pesquera.
+
+## Cómo usar este libro {-}
+
+Cada capítulo corresponde a una unidad temática del curso e incluye:
+
+- Contenidos teóricos
+- Ejemplos con datos reales de pesquerías chilenas
+- Preguntas de autoevaluación
+
+## Datos utilizados {-}
+
+Los análisis y gráficos se realizan con datos de SERNAPESCA y SUBPESCA, disponibles en la carpeta `datos/` del repositorio.
+
+
