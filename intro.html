@@ -55,71 +55,6 @@
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
-<style type="text/css">
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <style type="text/css">
   
@@ -412,27 +347,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">1.5</span> Importancia Pesquera de Chile<a href="intro.html#importancia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="desembarque-nacional-20152025" class="section level3 hasAnchor" number="1.5.1">
 <h3><span class="header-section-number">1.5.1</span> Desembarque nacional 2015–2025<a href="intro.html#desembarque-nacional-20152025" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="intro.html#cb1-1" tabindex="-1"></a>anos   <span class="ot">&lt;-</span> <span class="dv">2015</span><span class="sc">:</span><span class="dv">2025</span></span>
-<span id="cb1-2"><a href="intro.html#cb1-2" tabindex="-1"></a>total  <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2410579</span>,<span class="dv">1928598</span>,<span class="dv">2500562</span>,<span class="dv">2782188</span>,<span class="dv">2773500</span>,</span>
-<span id="cb1-3"><a href="intro.html#cb1-3" tabindex="-1"></a>            <span class="dv">2681998</span>,<span class="dv">2886478</span>,<span class="dv">3096605</span>,<span class="dv">3028375</span>,<span class="dv">2900536</span>,<span class="dv">3541604</span>)</span>
-<span id="cb1-4"><a href="intro.html#cb1-4" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="intro.html#cb1-5" tabindex="-1"></a>df_tot <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">YY =</span> anos, <span class="at">Total_mil =</span> total<span class="sc">/</span><span class="dv">1000</span>)</span>
-<span id="cb1-6"><a href="intro.html#cb1-6" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="intro.html#cb1-7" tabindex="-1"></a><span class="fu">ggplot</span>(df_tot, <span class="fu">aes</span>(<span class="at">x =</span> YY, <span class="at">y =</span> Total_mil)) <span class="sc">+</span></span>
-<span id="cb1-8"><a href="intro.html#cb1-8" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">&quot;#1A3A5C&quot;</span>, <span class="at">alpha =</span> <span class="fl">0.85</span>, <span class="at">width =</span> <span class="fl">0.75</span>) <span class="sc">+</span></span>
-<span id="cb1-9"><a href="intro.html#cb1-9" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">&quot;loess&quot;</span>, <span class="at">color =</span> <span class="st">&quot;#E6820A&quot;</span>, <span class="at">linewidth =</span> <span class="fl">1.5</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb1-10"><a href="intro.html#cb1-10" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(<span class="fu">round</span>(Total_mil<span class="sc">/</span><span class="dv">1000</span>,<span class="dv">2</span>),<span class="st">&quot;M&quot;</span>)),</span>
-<span id="cb1-11"><a href="intro.html#cb1-11" tabindex="-1"></a>            <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.4</span>, <span class="at">size =</span> <span class="fl">3.5</span>, <span class="at">color =</span> <span class="st">&quot;#2C3E50&quot;</span>) <span class="sc">+</span></span>
-<span id="cb1-12"><a href="intro.html#cb1-12" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="dv">2015</span><span class="sc">:</span><span class="dv">2025</span>) <span class="sc">+</span></span>
-<span id="cb1-13"><a href="intro.html#cb1-13" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>(),</span>
-<span id="cb1-14"><a href="intro.html#cb1-14" tabindex="-1"></a>                     <span class="at">expand  =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.14</span>))) <span class="sc">+</span></span>
-<span id="cb1-15"><a href="intro.html#cb1-15" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title   =</span> <span class="st">&quot;Desembarque total de peces en Chile&quot;</span>,</span>
-<span id="cb1-16"><a href="intro.html#cb1-16" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">&quot;Chile, 2015–2025 | Datos: SERNAPESCA&quot;</span>,</span>
-<span id="cb1-17"><a href="intro.html#cb1-17" tabindex="-1"></a>       <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">&quot;Miles de toneladas&quot;</span>,</span>
-<span id="cb1-18"><a href="intro.html#cb1-18" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">&quot;Fuente: SERNAPESCA 2025&quot;</span>) <span class="sc">+</span></span>
-<span id="cb1-19"><a href="intro.html#cb1-19" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="dv">13</span>) <span class="sc">+</span></span>
-<span id="cb1-20"><a href="intro.html#cb1-20" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title   =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">&quot;bold&quot;</span>),</span>
-<span id="cb1-21"><a href="intro.html#cb1-21" tabindex="-1"></a>        <span class="at">axis.text.x  =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
 <div class="figure"><span style="display:block;" id="fig:desembarques-fig"></span>
 <img src="01-introduccion_files/figure-html/desembarques-fig-1.png" alt="Desembarque total de peces en Chile, 2015-2025. Fuente: SERNAPESCA 2025" width="672" />
@@ -500,26 +414,6 @@ Figure 1.1: Desembarque total de peces en Chile, 2015-2025. Fuente: SERNAPESCA 2
 </div>
 <div id="estados-de-situación-lgpa-art.-2-n59" class="section level3 hasAnchor" number="1.6.2">
 <h3><span class="header-section-number">1.6.2</span> Estados de situación (LGPA Art. 2, N°59)<a href="intro.html#estados-de-situaci%C3%B3n-lgpa-art.-2-n59" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="intro.html#cb3-1" tabindex="-1"></a>df_estados <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb3-2"><a href="intro.html#cb3-2" tabindex="-1"></a>  <span class="at">Estado =</span> <span class="fu">c</span>(<span class="st">&quot;Subexplotada&quot;</span>,<span class="st">&quot;Plena Explotación&quot;</span>,<span class="st">&quot;Sobreexplotada&quot;</span>,<span class="st">&quot;Agotada o Colapsada&quot;</span>),</span>
-<span id="cb3-3"><a href="intro.html#cb3-3" tabindex="-1"></a>  <span class="at">Criterio_Biomasa =</span> <span class="fu">c</span>(<span class="st">&quot;B &gt; B_RMS&quot;</span>,<span class="st">&quot;B ≈ B_RMS&quot;</span>,<span class="st">&quot;B &lt; B_RMS&quot;</span>,<span class="st">&quot;B &lt; B_límite&quot;</span>),</span>
-<span id="cb3-4"><a href="intro.html#cb3-4" tabindex="-1"></a>  <span class="at">Criterio_F =</span> <span class="fu">c</span>(<span class="st">&quot;F &lt; F_RMS&quot;</span>,<span class="st">&quot;F ≈ F_RMS&quot;</span>,<span class="st">&quot;F &gt; F_RMS&quot;</span>,<span class="st">&quot;Capturas mínimas históricas&quot;</span>),</span>
-<span id="cb3-5"><a href="intro.html#cb3-5" tabindex="-1"></a>  <span class="at">Implicancia =</span> <span class="fu">c</span>(</span>
-<span id="cb3-6"><a href="intro.html#cb3-6" tabindex="-1"></a>    <span class="st">&quot;Potencial para mayor rendimiento; puede aumentarse el esfuerzo cautelosamente&quot;</span>,</span>
-<span id="cb3-7"><a href="intro.html#cb3-7" tabindex="-1"></a>    <span class="st">&quot;Stock en o cerca de su rendimiento máximo; mantener esfuerzo&quot;</span>,</span>
-<span id="cb3-8"><a href="intro.html#cb3-8" tabindex="-1"></a>    <span class="st">&quot;No sostenible a largo plazo; riesgo de colapso si no se reduce F&quot;</span>,</span>
-<span id="cb3-9"><a href="intro.html#cb3-9" tabindex="-1"></a>    <span class="st">&quot;Stock sin capacidad de recuperación natural adecuada; veda o drástica reducción&quot;</span></span>
-<span id="cb3-10"><a href="intro.html#cb3-10" tabindex="-1"></a>  )</span>
-<span id="cb3-11"><a href="intro.html#cb3-11" tabindex="-1"></a>)</span>
-<span id="cb3-12"><a href="intro.html#cb3-12" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="intro.html#cb3-13" tabindex="-1"></a><span class="fu">kable</span>(df_estados,</span>
-<span id="cb3-14"><a href="intro.html#cb3-14" tabindex="-1"></a>      <span class="at">caption =</span> <span class="st">&quot;Estados de situación de pesquerías según LGPA Art. 2 N°59&quot;</span>,</span>
-<span id="cb3-15"><a href="intro.html#cb3-15" tabindex="-1"></a>      <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;Estado&quot;</span>,<span class="st">&quot;Criterio (Biomasa)&quot;</span>,<span class="st">&quot;Criterio (F/U)&quot;</span>,<span class="st">&quot;Implicancia para el manejo&quot;</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb3-16"><a href="intro.html#cb3-16" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">&quot;striped&quot;</span>,<span class="st">&quot;hover&quot;</span>), <span class="at">full_width =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-17"><a href="intro.html#cb3-17" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">1</span>, <span class="at">color =</span> <span class="st">&quot;#155724&quot;</span>, <span class="at">background =</span> <span class="st">&quot;#D4EDDA&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-18"><a href="intro.html#cb3-18" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">2</span>, <span class="at">color =</span> <span class="st">&quot;#856404&quot;</span>, <span class="at">background =</span> <span class="st">&quot;#FFF3CD&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-19"><a href="intro.html#cb3-19" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">3</span>, <span class="at">color =</span> <span class="st">&quot;#721c24&quot;</span>, <span class="at">background =</span> <span class="st">&quot;#F8D7DA&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-20"><a href="intro.html#cb3-20" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="dv">4</span>, <span class="at">color =</span> <span class="st">&quot;#FFFFFF&quot;</span>, <span class="at">background =</span> <span class="st">&quot;#721c24&quot;</span>)</span></code></pre></div>
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:estados-table">Table 1.1: </span><span id="tab:estados-table">Table 1.2: </span>Estados de situación de pesquerías según LGPA Art. 2 N°59
@@ -602,27 +496,6 @@ Stock sin capacidad de recuperación natural adecuada; veda o drástica reducci�
 </div>
 <div id="resumen-del-estado-2025-subpesca" class="section level3 hasAnchor" number="1.6.3">
 <h3><span class="header-section-number">1.6.3</span> Resumen del estado 2025 (SUBPESCA)<a href="intro.html#resumen-del-estado-2025-subpesca" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="intro.html#cb4-1" tabindex="-1"></a>df_pbr <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb4-2"><a href="intro.html#cb4-2" tabindex="-1"></a>  <span class="at">Estado =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Subexplotada&quot;</span>,<span class="st">&quot;Plena Explotación&quot;</span>,<span class="st">&quot;Sobreexplotada&quot;</span>,<span class="st">&quot;Agotada/Colapsada&quot;</span>),</span>
-<span id="cb4-3"><a href="intro.html#cb4-3" tabindex="-1"></a>                  <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Subexplotada&quot;</span>,<span class="st">&quot;Plena Explotación&quot;</span>,<span class="st">&quot;Sobreexplotada&quot;</span>,<span class="st">&quot;Agotada/Colapsada&quot;</span>)),</span>
-<span id="cb4-4"><a href="intro.html#cb4-4" tabindex="-1"></a>  <span class="at">N      =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">13</span>,<span class="dv">6</span>,<span class="dv">7</span>),</span>
-<span id="cb4-5"><a href="intro.html#cb4-5" tabindex="-1"></a>  <span class="at">Pct    =</span> <span class="fu">c</span>(<span class="dv">7</span>,<span class="dv">47</span>,<span class="dv">21</span>,<span class="dv">25</span>),</span>
-<span id="cb4-6"><a href="intro.html#cb4-6" tabindex="-1"></a>  <span class="at">Color  =</span> <span class="fu">c</span>(<span class="st">&quot;#27AE60&quot;</span>,<span class="st">&quot;#F1C40F&quot;</span>,<span class="st">&quot;#E67E22&quot;</span>,<span class="st">&quot;#C0392B&quot;</span>)</span>
-<span id="cb4-7"><a href="intro.html#cb4-7" tabindex="-1"></a>)</span>
-<span id="cb4-8"><a href="intro.html#cb4-8" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="intro.html#cb4-9" tabindex="-1"></a><span class="fu">ggplot</span>(df_pbr, <span class="fu">aes</span>(<span class="at">x =</span> Estado, <span class="at">y =</span> N, <span class="at">fill =</span> Estado)) <span class="sc">+</span></span>
-<span id="cb4-10"><a href="intro.html#cb4-10" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">width =</span> <span class="fl">0.6</span>, <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb4-11"><a href="intro.html#cb4-11" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> <span class="fu">paste0</span>(N,<span class="st">&quot; (&quot;</span>,Pct,<span class="st">&quot;%)&quot;</span>)),</span>
-<span id="cb4-12"><a href="intro.html#cb4-12" tabindex="-1"></a>            <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.4</span>, <span class="at">fontface =</span> <span class="st">&quot;bold&quot;</span>, <span class="at">size =</span> <span class="fl">4.5</span>) <span class="sc">+</span></span>
-<span id="cb4-13"><a href="intro.html#cb4-13" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> df_pbr<span class="sc">$</span>Color) <span class="sc">+</span></span>
-<span id="cb4-14"><a href="intro.html#cb4-14" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.2</span>)), <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">17</span>)) <span class="sc">+</span></span>
-<span id="cb4-15"><a href="intro.html#cb4-15" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title   =</span> <span class="st">&quot;Estado de las pesquerías chilenas con PBR, año 2025&quot;</span>,</span>
-<span id="cb4-16"><a href="intro.html#cb4-16" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">&quot;De 28 pesquerías con puntos biológicos de referencia establecidos&quot;</span>,</span>
-<span id="cb4-17"><a href="intro.html#cb4-17" tabindex="-1"></a>       <span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">&quot;Número de pesquerías&quot;</span>,</span>
-<span id="cb4-18"><a href="intro.html#cb4-18" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">&quot;Fuente: SUBPESCA 2025&quot;</span>) <span class="sc">+</span></span>
-<span id="cb4-19"><a href="intro.html#cb4-19" tabindex="-1"></a>  <span class="fu">theme_classic</span>(<span class="dv">13</span>) <span class="sc">+</span></span>
-<span id="cb4-20"><a href="intro.html#cb4-20" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.title  =</span> <span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">&quot;bold&quot;</span>),</span>
-<span id="cb4-21"><a href="intro.html#cb4-21" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">15</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:estado-2025-fig"></span>
 <img src="01-introduccion_files/figure-html/estado-2025-fig-1.png" alt="Estado de las pesquerías chilenas con PBR definido, 2025. Fuente: SUBPESCA 2025" width="672" />
 <p class="caption">
@@ -640,33 +513,6 @@ Figure 1.2: Estado de las pesquerías chilenas con PBR definido, 2025. Fuente: S
 </div>
 <div id="glosario" class="section level2 hasAnchor" number="1.7">
 <h2><span class="header-section-number">1.7</span> Glosario de términos esenciales<a href="intro.html#glosario" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="intro.html#cb5-1" tabindex="-1"></a>glosario <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb5-2"><a href="intro.html#cb5-2" tabindex="-1"></a>  Término <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Recurso renovable&quot;</span>,<span class="st">&quot;Biología de Recursos&quot;</span>,<span class="st">&quot;Biomasa (B)&quot;</span>,<span class="st">&quot;Mortalidad por pesca (F)&quot;</span>,</span>
-<span id="cb5-3"><a href="intro.html#cb5-3" tabindex="-1"></a>               <span class="st">&quot;RMS&quot;</span>,<span class="st">&quot;B_RMS&quot;</span>,<span class="st">&quot;F_RMS&quot;</span>,<span class="st">&quot;PBR&quot;</span>,<span class="st">&quot;LGPA&quot;</span>,<span class="st">&quot;CCT&quot;</span>,<span class="st">&quot;Pesquería tipo &#39;S&#39;&quot;</span>,<span class="st">&quot;AMERB&quot;</span>,<span class="st">&quot;CPUE&quot;</span>,</span>
-<span id="cb5-4"><a href="intro.html#cb5-4" tabindex="-1"></a>               <span class="st">&quot;Reclutamiento&quot;</span>,<span class="st">&quot;Unidad de pesquería&quot;</span>,<span class="st">&quot;Metapoblación&quot;</span>),</span>
-<span id="cb5-5"><a href="intro.html#cb5-5" tabindex="-1"></a>  Definición <span class="ot">=</span> <span class="fu">c</span>(</span>
-<span id="cb5-6"><a href="intro.html#cb5-6" tabindex="-1"></a>    <span class="st">&quot;Recurso natural que puede regenerarse si la tasa de extracción es menor a la de reproducción.&quot;</span>,</span>
-<span id="cb5-7"><a href="intro.html#cb5-7" tabindex="-1"></a>    <span class="st">&quot;Disciplina que estudia poblaciones de organismos acuáticos explotados para proveer bases del manejo sustentable.&quot;</span>,</span>
-<span id="cb5-8"><a href="intro.html#cb5-8" tabindex="-1"></a>    <span class="st">&quot;Masa total del stock explotable expresada en toneladas.&quot;</span>,</span>
-<span id="cb5-9"><a href="intro.html#cb5-9" tabindex="-1"></a>    <span class="st">&quot;Fracción de la biomasa que muere anualmente por causa de la pesca.&quot;</span>,</span>
-<span id="cb5-10"><a href="intro.html#cb5-10" tabindex="-1"></a>    <span class="st">&quot;Rendimiento Máximo Sostenible: mayor nivel promedio de captura sostenible en el tiempo.&quot;</span>,</span>
-<span id="cb5-11"><a href="intro.html#cb5-11" tabindex="-1"></a>    <span class="st">&quot;Nivel de biomasa al que se logra el RMS; referencia objetivo de manejo.&quot;</span>,</span>
-<span id="cb5-12"><a href="intro.html#cb5-12" tabindex="-1"></a>    <span class="st">&quot;Tasa de mortalidad por pesca al nivel del RMS.&quot;</span>,</span>
-<span id="cb5-13"><a href="intro.html#cb5-13" tabindex="-1"></a>    <span class="st">&quot;Punto Biológico de Referencia: valor estandarizado que define el estado de situación de la pesquería.&quot;</span>,</span>
-<span id="cb5-14"><a href="intro.html#cb5-14" tabindex="-1"></a>    <span class="st">&quot;Ley General de Pesca y Acuicultura (N° 18.892): marco normativo de la actividad pesquera en Chile.&quot;</span>,</span>
-<span id="cb5-15"><a href="intro.html#cb5-15" tabindex="-1"></a>    <span class="st">&quot;Comité Científico Técnico Pesquero: órgano asesor que define el estado de situación y los PBR.&quot;</span>,</span>
-<span id="cb5-16"><a href="intro.html#cb5-16" tabindex="-1"></a>    <span class="st">&quot;Pesquería artesanal, espacialmente estructurada, sustentada por stocks sedentarios (Orensanz et al., 2005).&quot;</span>,</span>
-<span id="cb5-17"><a href="intro.html#cb5-17" tabindex="-1"></a>    <span class="st">&quot;Área de Manejo y Explotación de Recursos Bentónicos: derechos de acceso territoriales.&quot;</span>,</span>
-<span id="cb5-18"><a href="intro.html#cb5-18" tabindex="-1"></a>    <span class="st">&quot;Captura por Unidad de Esfuerzo: índice de abundancia relativa = Captura / Esfuerzo.&quot;</span>,</span>
-<span id="cb5-19"><a href="intro.html#cb5-19" tabindex="-1"></a>    <span class="st">&quot;Individuos jóvenes que se incorporan al stock explotable al alcanzar la talla/edad de primera captura.&quot;</span>,</span>
-<span id="cb5-20"><a href="intro.html#cb5-20" tabindex="-1"></a>    <span class="st">&quot;Área geográfica dentro de la cual un stock se evalúa y gestiona como unidad.&quot;</span>,</span>
-<span id="cb5-21"><a href="intro.html#cb5-21" tabindex="-1"></a>    <span class="st">&quot;Conjunto de subpoblaciones locales de la misma especie conectadas por dispersión larval.&quot;</span></span>
-<span id="cb5-22"><a href="intro.html#cb5-22" tabindex="-1"></a>  )</span>
-<span id="cb5-23"><a href="intro.html#cb5-23" tabindex="-1"></a>)</span>
-<span id="cb5-24"><a href="intro.html#cb5-24" tabindex="-1"></a><span class="fu">kable</span>(glosario, <span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">&quot;Término&quot;</span>,<span class="st">&quot;Definición&quot;</span>),</span>
-<span id="cb5-25"><a href="intro.html#cb5-25" tabindex="-1"></a>      <span class="at">caption =</span> <span class="st">&quot;Glosario de términos esenciales — Clase 1&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-26"><a href="intro.html#cb5-26" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">&quot;striped&quot;</span>,<span class="st">&quot;hover&quot;</span>,<span class="st">&quot;condensed&quot;</span>), <span class="at">full_width =</span> <span class="cn">TRUE</span>, <span class="at">font_size =</span> <span class="dv">13</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb5-27"><a href="intro.html#cb5-27" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>, <span class="at">width =</span> <span class="st">&quot;25%&quot;</span>)</span></code></pre></div>
 <table class="table table-striped table-hover table-condensed" style="font-size: 13px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:glosario-table">Table 1.3: </span><span id="tab:glosario-table">Table 1.4: </span>Glosario de términos esenciales — Clase 1

@@ -189,30 +189,6 @@ La principal herramienta de gestión para pesquerías tipo "S" en Chile son las 
 ### Desembarque nacional 2015–2025
 
 
-``` r
-anos   <- 2015:2025
-total  <- c(2410579,1928598,2500562,2782188,2773500,
-            2681998,2886478,3096605,3028375,2900536,3541604)
-
-df_tot <- data.frame(YY = anos, Total_mil = total/1000)
-
-ggplot(df_tot, aes(x = YY, y = Total_mil)) +
-  geom_col(fill = "#1A3A5C", alpha = 0.85, width = 0.75) +
-  geom_smooth(method = "loess", color = "#E6820A", linewidth = 1.5, se = FALSE) +
-  geom_text(aes(label = paste0(round(Total_mil/1000,2),"M")),
-            vjust = -0.4, size = 3.5, color = "#2C3E50") +
-  scale_x_continuous(breaks = 2015:2025) +
-  scale_y_continuous(labels = label_comma(),
-                     expand  = expansion(mult = c(0, 0.14))) +
-  labs(title   = "Desembarque total de peces en Chile",
-       subtitle = "Chile, 2015–2025 | Datos: SERNAPESCA",
-       x = NULL, y = "Miles de toneladas",
-       caption = "Fuente: SERNAPESCA 2025") +
-  theme_classic(13) +
-  theme(plot.title   = element_text(face = "bold"),
-        axis.text.x  = element_text(angle = 45, hjust = 1))
-```
-
 ```
 ## `geom_smooth()` using formula = 'y ~ x'
 ```
@@ -248,30 +224,6 @@ Los **PBR** son valores estandarizados que permiten determinar el estado de situ
 > **Definición (LGPA Art. 2):** El RMS es el mayor nivel promedio de remoción por captura que se puede obtener de un stock en forma sostenible en el tiempo y bajo las condiciones ecológicas y ambientales predominantes.
 
 ### Estados de situación (LGPA Art. 2, N°59)
-
-
-``` r
-df_estados <- data.frame(
-  Estado = c("Subexplotada","Plena Explotación","Sobreexplotada","Agotada o Colapsada"),
-  Criterio_Biomasa = c("B > B_RMS","B ≈ B_RMS","B < B_RMS","B < B_límite"),
-  Criterio_F = c("F < F_RMS","F ≈ F_RMS","F > F_RMS","Capturas mínimas históricas"),
-  Implicancia = c(
-    "Potencial para mayor rendimiento; puede aumentarse el esfuerzo cautelosamente",
-    "Stock en o cerca de su rendimiento máximo; mantener esfuerzo",
-    "No sostenible a largo plazo; riesgo de colapso si no se reduce F",
-    "Stock sin capacidad de recuperación natural adecuada; veda o drástica reducción"
-  )
-)
-
-kable(df_estados,
-      caption = "Estados de situación de pesquerías según LGPA Art. 2 N°59",
-      col.names = c("Estado","Criterio (Biomasa)","Criterio (F/U)","Implicancia para el manejo")) %>%
-  kable_styling(bootstrap_options = c("striped","hover"), full_width = TRUE) %>%
-  row_spec(1, color = "#155724", background = "#D4EDDA") %>%
-  row_spec(2, color = "#856404", background = "#FFF3CD") %>%
-  row_spec(3, color = "#721c24", background = "#F8D7DA") %>%
-  row_spec(4, color = "#FFFFFF", background = "#721c24")
-```
 
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:estados-table)(\#tab:estados-table)Estados de situación de pesquerías según LGPA Art. 2 N°59</caption>
@@ -313,31 +265,6 @@ kable(df_estados,
 
 ### Resumen del estado 2025 (SUBPESCA)
 
-
-``` r
-df_pbr <- data.frame(
-  Estado = factor(c("Subexplotada","Plena Explotación","Sobreexplotada","Agotada/Colapsada"),
-                  levels = c("Subexplotada","Plena Explotación","Sobreexplotada","Agotada/Colapsada")),
-  N      = c(2,13,6,7),
-  Pct    = c(7,47,21,25),
-  Color  = c("#27AE60","#F1C40F","#E67E22","#C0392B")
-)
-
-ggplot(df_pbr, aes(x = Estado, y = N, fill = Estado)) +
-  geom_col(width = 0.6, show.legend = FALSE) +
-  geom_text(aes(label = paste0(N," (",Pct,"%)")),
-            vjust = -0.4, fontface = "bold", size = 4.5) +
-  scale_fill_manual(values = df_pbr$Color) +
-  scale_y_continuous(expand = expansion(mult = c(0, 0.2)), limits = c(0,17)) +
-  labs(title   = "Estado de las pesquerías chilenas con PBR, año 2025",
-       subtitle = "De 28 pesquerías con puntos biológicos de referencia establecidos",
-       x = NULL, y = "Número de pesquerías",
-       caption = "Fuente: SUBPESCA 2025") +
-  theme_classic(13) +
-  theme(plot.title  = element_text(face = "bold"),
-        axis.text.x = element_text(angle = 15, hjust = 1))
-```
-
 <div class="figure">
 <img src="01-introduccion_files/figure-html/estado-2025-fig-1.png" alt="Estado de las pesquerías chilenas con PBR definido, 2025. Fuente: SUBPESCA 2025" width="672" />
 <p class="caption">(\#fig:estado-2025-fig)Estado de las pesquerías chilenas con PBR definido, 2025. Fuente: SUBPESCA 2025</p>
@@ -352,37 +279,6 @@ ggplot(df_pbr, aes(x = Estado, y = N, fill = Estado)) +
 ---
 
 ## Glosario de términos esenciales {#glosario}
-
-
-``` r
-glosario <- data.frame(
-  Término = c("Recurso renovable","Biología de Recursos","Biomasa (B)","Mortalidad por pesca (F)",
-               "RMS","B_RMS","F_RMS","PBR","LGPA","CCT","Pesquería tipo 'S'","AMERB","CPUE",
-               "Reclutamiento","Unidad de pesquería","Metapoblación"),
-  Definición = c(
-    "Recurso natural que puede regenerarse si la tasa de extracción es menor a la de reproducción.",
-    "Disciplina que estudia poblaciones de organismos acuáticos explotados para proveer bases del manejo sustentable.",
-    "Masa total del stock explotable expresada en toneladas.",
-    "Fracción de la biomasa que muere anualmente por causa de la pesca.",
-    "Rendimiento Máximo Sostenible: mayor nivel promedio de captura sostenible en el tiempo.",
-    "Nivel de biomasa al que se logra el RMS; referencia objetivo de manejo.",
-    "Tasa de mortalidad por pesca al nivel del RMS.",
-    "Punto Biológico de Referencia: valor estandarizado que define el estado de situación de la pesquería.",
-    "Ley General de Pesca y Acuicultura (N° 18.892): marco normativo de la actividad pesquera en Chile.",
-    "Comité Científico Técnico Pesquero: órgano asesor que define el estado de situación y los PBR.",
-    "Pesquería artesanal, espacialmente estructurada, sustentada por stocks sedentarios (Orensanz et al., 2005).",
-    "Área de Manejo y Explotación de Recursos Bentónicos: derechos de acceso territoriales.",
-    "Captura por Unidad de Esfuerzo: índice de abundancia relativa = Captura / Esfuerzo.",
-    "Individuos jóvenes que se incorporan al stock explotable al alcanzar la talla/edad de primera captura.",
-    "Área geográfica dentro de la cual un stock se evalúa y gestiona como unidad.",
-    "Conjunto de subpoblaciones locales de la misma especie conectadas por dispersión larval."
-  )
-)
-kable(glosario, col.names = c("Término","Definición"),
-      caption = "Glosario de términos esenciales — Clase 1") %>%
-  kable_styling(bootstrap_options = c("striped","hover","condensed"), full_width = TRUE, font_size = 13) %>%
-  column_spec(1, bold = TRUE, width = "25%")
-```
 
 <table class="table table-striped table-hover table-condensed" style="font-size: 13px; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">(\#tab:glosario-table)(\#tab:glosario-table)Glosario de términos esenciales — Clase 1</caption>
