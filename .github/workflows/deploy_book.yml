@@ -28,6 +28,8 @@ jobs:
           extra-packages: any::bookdown
       - name: Build book
         run: Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
+      - name: Add .nojekyll
+        run: touch _book/.nojekyll
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
