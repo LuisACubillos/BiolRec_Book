@@ -1,0 +1,18 @@
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Bookdown output
+_book/
+_bookdown_files/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.html
+*.pdf

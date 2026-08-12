@@ -1,0 +1,8 @@
+book_filename: "BiologiaRecursos"
+new_session: yes
+language:
+  ui:
+    chapter_name: "Clase "
+rmd_files:
+  - index.Rmd
+  - 01-introduccion.Rmd

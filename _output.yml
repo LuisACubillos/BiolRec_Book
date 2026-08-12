@@ -1,0 +1,17 @@
+bookdown::gitbook:
+  css: estilos/book.css
+  split_by: chapter
+  number_sections: true
+  config:
+    toc:
+      collapse: section
+      scroll_highlight: yes
+    download: ["pdf"]
+    sharing:
+      github: yes
+      facebook: no
+      twitter: no
+bookdown::pdf_book:
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: false
