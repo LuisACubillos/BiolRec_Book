@@ -195,7 +195,7 @@ La principal herramienta de gestión para pesquerías tipo "S" en Chile son las 
 
 ### Desembarque nacional 2015–2025
 
-```{r desembarques-fig, fig.cap="Desembarque total de peces en Chile, 2015-2025. Fuente: SERNAPESCA 2025"}
+```{r desembarques-fig, echo=FALSE, fig.cap="Desembarque total de peces en Chile, 2015-2025. Fuente: SERNAPESCA 2025"}
 anos   <- 2015:2025
 total  <- c(2410579,1928598,2500562,2782188,2773500,
             2681998,2886478,3096605,3028375,2900536,3541604)
@@ -246,7 +246,7 @@ Los **PBR** son valores estandarizados que permiten determinar el estado de situ
 
 ### Estados de situación (LGPA Art. 2, N°59)
 
-```{r estados-table}
+```{r estados-table, echo=FALSE}
 df_estados <- data.frame(
   Estado = c("Subexplotada","Plena Explotación","Sobreexplotada","Agotada o Colapsada"),
   Criterio_Biomasa = c("B > B_RMS","B ≈ B_RMS","B < B_RMS","B < B_límite"),
@@ -271,7 +271,7 @@ kable(df_estados,
 
 ### Resumen del estado 2025 (SUBPESCA)
 
-```{r estado-2025-fig, fig.cap="Estado de las pesquerías chilenas con PBR definido, 2025. Fuente: SUBPESCA 2025"}
+```{r estado-2025-fig, fig.cap="Estado de las pesquerías chilenas con PBR definido, 2025. Fuente: SUBPESCA 2025",echo=FALSE}
 df_pbr <- data.frame(
   Estado = factor(c("Subexplotada","Plena Explotación","Sobreexplotada","Agotada/Colapsada"),
                   levels = c("Subexplotada","Plena Explotación","Sobreexplotada","Agotada/Colapsada")),
@@ -305,7 +305,7 @@ ggplot(df_pbr, aes(x = Estado, y = N, fill = Estado)) +
 
 ## Glosario de términos esenciales {#glosario}
 
-```{r glosario-table}
+```{r glosario-table,echo=FALSE}
 glosario <- data.frame(
   Término = c("Recurso renovable","Biología de Recursos","Biomasa (B)","Mortalidad por pesca (F)",
                "RMS","B_RMS","F_RMS","PBR","LGPA","CCT","Pesquería tipo 'S'","AMERB","CPUE",
