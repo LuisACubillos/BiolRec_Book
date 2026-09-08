@@ -6,3 +6,4 @@ language:
 rmd_files:
   - index.Rmd
   - 01-introduccion.Rmd
+  - 02-crustaceos.Rmd
