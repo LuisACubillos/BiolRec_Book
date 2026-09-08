@@ -1,12 +1,21 @@
 # Biología de Recursos Pesqueros — Bookdown
 
-**Prof. Luis Cubillos | Universidad de Concepción | 2025**
+**Prof. Luis Cubillos | Universidad de Concepción | 2025–2026**
 
-Apuntes y guías de estudio de la asignatura Biología de Recursos Pesqueros, publicados como libro web interactivo con [bookdown](https://bookdown.org/).
+Apuntes y guías de estudio de la asignatura Biología de Recursos Pesqueros, publicados como libro web interactivo con [bookdown](https://bookdown.org/). El libro se construye semana a semana a medida que avanza el curso.
 
 ## 🌐 Ver el libro
 
-> https://lucubillos.github.io/BiolRec_Book/
+> https://luisacubillos.github.io/BiolRec_Book/
+
+## 📚 Contenidos
+
+| Capítulo | Tema | Estado |
+|---|---|---|
+| Prefacio | Presentación del libro y cómo usarlo | ✅ |
+| Clase 1 | Introducción a los Recursos Marinos | ✅ |
+| Clase 2 | Recursos Acuáticos Renovables: Crustáceos Demersales | ✅ |
+| Clase 3 | Dinámica poblacional — modelos de crecimiento y mortalidad | 🔜 |
 
 ## 📁 Estructura del repositorio
 
@@ -16,7 +25,7 @@ BiolRec_Book/
 ├── _output.yml            # Formatos de salida (gitbook, pdf)
 ├── index.Rmd              # Portada y prefacio
 ├── 01-introduccion.Rmd    # Clase 1: Introducción a los Recursos Marinos
-├── datos/                 # Datos de desembarque SERNAPESCA
+├── 02-crustaceos.Rmd      # Clase 2: Crustáceos Demersales
 ├── estilos/book.css       # Hoja de estilos
 ├── referencias.bib        # Bibliografía BibTeX
 └── .github/workflows/     # GitHub Actions (publicación automática)
@@ -25,14 +34,14 @@ BiolRec_Book/
 ## 🚀 Compilar localmente
 
 ```r
-# Instalar bookdown si aún no está
-install.packages("bookdown")
+# Instalar dependencias si aún no están
+install.packages(c("bookdown","ggplot2","dplyr","tidyr","scales","kableExtra"))
 
-# Compilar el libro
+# Compilar el libro completo
 bookdown::render_book("index.Rmd")
 ```
 
-El libro se genera en la carpeta `_book/`.
+El libro se genera en la carpeta `_book/`. Ábrelo con `_book/index.html`.
 
 ## 📦 Dependencias R
 
@@ -40,6 +49,10 @@ El libro se genera en la carpeta `_book/`.
 - `ggplot2`, `dplyr`, `tidyr`, `scales`
 - `kableExtra`
 
+## 🔄 Publicación automática
+
+Cada `push` a la rama `main` activa un GitHub Action que compila el libro y lo publica en GitHub Pages (rama `gh-pages`). El proceso toma aproximadamente 5 minutos.
+
 ## 📄 Licencia
 
-Material de uso docente — Universidad de Concepción.
+Material de uso docente — Universidad de Concepción. Prohibida su reproducción con fines comerciales sin autorización del autor.
