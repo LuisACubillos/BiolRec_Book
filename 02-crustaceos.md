@@ -22,23 +22,6 @@ Este capítulo se enfoca en los **crustáceos demersales** de Chile, en particul
 
 Las pesquerías industriales de arrastre de fondo en Chile centro-norte se centran en tres especies:
 
-
-``` r
-spp <- data.frame(
-  Nombre_comun  = c("Langostino colorado","Langostino amarillo","Camaron nailon"),
-  Nombre_cientifico = c("*Grimothea monodon*","*Grimothea johni*","*Heterocarpus reedi*"),
-  Taxonomia = c("Anomura, Munididae","Anomura, Munididae","Decapoda, Pandalidae"),
-  Profundidad = c("80–400 m","80–500 m","100–600 m"),
-  Distribucion = c("II–VIII Region","II–VIII Region","III–XI Region")
-)
-kable(spp,
-      col.names = c("Nombre comun","Nombre cientifico","Grupo taxonomico",
-                    "Profundidad","Distribucion"),
-      escape = FALSE) |>
-  kable_styling(bootstrap_options = c("striped","hover","condensed"), full_width = TRUE) |>
-  row_spec(0, background = "#1A3A5C", color = "white")
-```
-
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
@@ -54,21 +37,21 @@ kable(spp,
    <td style="text-align:left;"> Langostino colorado </td>
    <td style="text-align:left;"> *Grimothea monodon* </td>
    <td style="text-align:left;"> Anomura, Munididae </td>
-   <td style="text-align:left;"> 80–400 m </td>
+   <td style="text-align:left;"> 80–300 m </td>
    <td style="text-align:left;"> II–VIII Region </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Langostino amarillo </td>
    <td style="text-align:left;"> *Grimothea johni* </td>
    <td style="text-align:left;"> Anomura, Munididae </td>
-   <td style="text-align:left;"> 80–500 m </td>
+   <td style="text-align:left;"> 80–400 m </td>
    <td style="text-align:left;"> II–VIII Region </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Camaron nailon </td>
    <td style="text-align:left;"> *Heterocarpus reedi* </td>
    <td style="text-align:left;"> Decapoda, Pandalidae </td>
-   <td style="text-align:left;"> 100–600 m </td>
+   <td style="text-align:left;"> 100–400 m </td>
    <td style="text-align:left;"> III–XI Region </td>
   </tr>
 </tbody>
@@ -107,31 +90,6 @@ Los **incrementos de talla por muda** medidos en campañas de laboratorio (FIP 2
 | *L. amarillo* | 3,80 mm LC/muda | 4,20 mm LC/muda |
 
 La mayor tasa de incremento en la IV Región refleja diferencias en temperatura del agua y disponibilidad de alimento entre ambas zonas.
-
-
-``` r
-set.seed(42)
-grupos <- data.frame(
-  media = c(18, 21, 24, 27, 30, 33),
-  sd    = c(1.2, 1.3, 1.4, 1.5, 1.6, 1.7),
-  prop  = c(0.25, 0.28, 0.22, 0.14, 0.08, 0.03),
-  Muda  = paste0("Muda ", 1:6)
-)
-tallas <- do.call(rbind, lapply(1:nrow(grupos), function(i) {
-  data.frame(LC   = rnorm(round(grupos$prop[i]*1000),
-                          grupos$media[i], grupos$sd[i]),
-             Muda = grupos$Muda[i])
-}))
-ggplot(tallas, aes(x = LC)) +
-  geom_histogram(aes(fill = Muda), binwidth = 0.8,
-                 color = "white", alpha = 0.85, position = "stack") +
-  scale_fill_manual(values = c("#AED6F1","#5DADE2","#2E86C1","#1A5276","#0D7E5A","#E6820A")) +
-  labs(x = "Longitud de cefalotórax (mm LC)", y = "Frecuencia",
-       fill = "Grupo de muda") +
-  theme_minimal(base_size = 12) +
-  theme(legend.position = "right",
-        panel.grid.minor = element_blank())
-```
 
 <div class="figure">
 <img src="02-crustaceos_files/figure-html/fig-freq-tallas-1.png" alt="Distribución de frecuencias de tallas de langostino colorado (datos ilustrativos). Cada componente normal representa un grupo de muda." width="672" />
@@ -180,49 +138,15 @@ El ciclo reproductivo de los langostinos está íntimamente vinculado a la muda 
 
 ## Pesquería y desembarques {#pesqueria-crustaceos}
 
-### Tendencias de desembarque 2013–2023
-
-
-``` r
-ggplot(desemb_long, aes(x = Anio, y = Toneladas / 1000,
-                        color = Especie, group = Especie)) +
-  geom_line(linewidth = 1.2) +
-  geom_point(size = 2.5, shape = 21, fill = "white", stroke = 1.1) +
-  scale_color_manual(values = colores_sp) +
-  scale_x_continuous(breaks = 2013:2023) +
-  scale_y_continuous(labels = label_comma(suffix = " k t"),
-                     limits = c(0, NA)) +
-  labs(x = NULL,
-       y = "Desembarque (miles de toneladas)",
-       color = NULL) +
-  theme_minimal(base_size = 12) +
-  theme(legend.position = "bottom",
-        panel.grid.minor = element_blank(),
-        axis.text.x = element_text(angle = 45, hjust = 1))
-```
+### Tendencias de desembarque 2013–2025
 
 <div class="figure">
-<img src="02-crustaceos_files/figure-html/fig-desembarques-crustaceos-1.png" alt="Desembarque anual de los tres crustáceos demersales principales en Chile (2013–2023). Fuente: SERNAPESCA." width="768" />
-<p class="caption">(\#fig:fig-desembarques-crustaceos)Desembarque anual de los tres crustáceos demersales principales en Chile (2013–2023). Fuente: SERNAPESCA.</p>
+<img src="02-crustaceos_files/figure-html/fig-desembarques-crustaceos-1.png" alt="Desembarque anual de los tres crustáceos demersales principales en Chile (2013–2025). Fuente: SERNAPESCA." width="768" />
+<p class="caption">(\#fig:fig-desembarques-crustaceos)Desembarque anual de los tres crustáceos demersales principales en Chile (2013–2025). Fuente: SERNAPESCA.</p>
 </div>
 
-
-``` r
-tab_res <- data.frame(
-  Estadistico = c("Minimo (t)","Maximo (t)","Promedio 2013-2023 (t)","Tendencia reciente"),
-  L_colorado  = c("5.264 (2019)","8.404 (2013)","6.569","Recuperacion 2020-2023"),
-  L_amarillo  = c("2.722 (2023)","4.517 (2015)","3.413","Descenso gradual"),
-  C_nailon    = c("4.044 (2020)","5.029 (2023)","4.564","Estable con leve alza")
-)
-kable(tab_res,
-      col.names = c("","Langostino colorado","Langostino amarillo","Camaron nailon"),
-      caption = "Resumen estadístico de desembarques 2013–2023. Fuente: SERNAPESCA.") |>
-  kable_styling(bootstrap_options = c("striped","hover"), full_width = TRUE) |>
-  row_spec(0, background = "#1A3A5C", color = "white")
-```
-
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
-<caption>(\#tab:tabla-desembarques-resumen)(\#tab:tabla-desembarques-resumen)Resumen estadístico de desembarques 2013–2023. Fuente: SERNAPESCA.</caption>
+<caption>(\#tab:tabla-desembarques-resumen)(\#tab:tabla-desembarques-resumen)Resumen estadístico de desembarques 2013–2025. Fuente: SERNAPESCA.</caption>
  <thead>
   <tr>
    <th style="text-align:left;color: white !important;background-color: rgba(26, 58, 92, 1) !important;">  </th>
@@ -236,7 +160,7 @@ kable(tab_res,
    <td style="text-align:left;"> Minimo (t) </td>
    <td style="text-align:left;"> 5.264 (2019) </td>
    <td style="text-align:left;"> 2.722 (2023) </td>
-   <td style="text-align:left;"> 4.044 (2020) </td>
+   <td style="text-align:left;"> 2.663 (2025) </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Maximo (t) </td>
@@ -245,16 +169,16 @@ kable(tab_res,
    <td style="text-align:left;"> 5.029 (2023) </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Promedio 2013-2023 (t) </td>
+   <td style="text-align:left;"> Promedio 2013-2025 (t) </td>
    <td style="text-align:left;"> 6.569 </td>
-   <td style="text-align:left;"> 3.413 </td>
-   <td style="text-align:left;"> 4.564 </td>
+   <td style="text-align:left;"> 3.425 </td>
+   <td style="text-align:left;"> 4.252 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Tendencia reciente </td>
-   <td style="text-align:left;"> Recuperacion 2020-2023 </td>
-   <td style="text-align:left;"> Descenso gradual </td>
-   <td style="text-align:left;"> Estable con leve alza </td>
+   <td style="text-align:left;"> Recuperacion 2020-2025 </td>
+   <td style="text-align:left;"> Recuperacion leve en 2025 </td>
+   <td style="text-align:left;"> Descenso pronunciado en 2025 </td>
   </tr>
 </tbody>
 </table>
@@ -283,66 +207,10 @@ El estado de cada pesquería se determina comparando la biomasa estimada con est
 
 **El diagrama de Kobe** sintetiza la posición de cada unidad de pesquería en el espacio (B/B_RMS, F/F_RMS):
 
-
-``` r
-kobe <- data.frame(
-  Especie = c("L. colorado UPN","L. colorado UPS",
-              "L. amarillo UPN","L. amarillo UPS",
-              "Camaron nailon"),
-  B_Brms  = c(1.2, 1.2, 1.7, 1.2, 1.3),
-  F_Frms  = c(0.9, 1.0, 0.8, 0.9, 0.6),
-  Color   = c("#C0392B","#E74C3C","#E6820A","#F0A500","#1A3A5C")
-)
-ggplot(kobe, aes(x = B_Brms, y = F_Frms)) +
-  annotate("rect", xmin=0,   xmax=1,   ymin=0,   ymax=1,   fill="#FADBD8", alpha=0.5) +
-  annotate("rect", xmin=1,   xmax=3.5, ymin=0,   ymax=1,   fill="#D5F5E3", alpha=0.5) +
-  annotate("rect", xmin=0,   xmax=1,   ymin=1,   ymax=2.2, fill="#922B21", alpha=0.25) +
-  annotate("rect", xmin=1,   xmax=3.5, ymin=1,   ymax=2.2, fill="#FAD7A0", alpha=0.45) +
-  geom_hline(yintercept = 1, linetype = "dashed", color = "gray40") +
-  geom_vline(xintercept = 1, linetype = "dashed", color = "gray40") +
-  annotate("text", x=0.5, y=0.5,  label="Sobreexplotada",         color="#922B21", fontface="bold", size=3.5) +
-  annotate("text", x=2.2, y=0.5,  label="Plena explotacion",      color="#1A6B35", fontface="bold", size=3.5) +
-  annotate("text", x=0.5, y=1.7,  label="Agotada / Colapso",      color="#6E2B2B", fontface="bold", size=3.5) +
-  annotate("text", x=2.2, y=1.7,  label="Subexplotada",           color="#784212", fontface="bold", size=3.5) +
-  geom_point(aes(color = Especie), size = 4.5) +
-  geom_text(aes(label = Especie, color = Especie),
-            size = 3.1, fontface = "bold", hjust = -0.1, vjust = 0.4,
-            show.legend = FALSE) +
-  scale_color_manual(values = setNames(kobe$Color, kobe$Especie)) +
-  scale_x_continuous(limits = c(0, 3.5), breaks = seq(0, 3.5, 0.5)) +
-  scale_y_continuous(limits = c(0, 2.2), breaks = seq(0, 2, 0.5)) +
-  labs(x = expression(B / B[RMS]),
-       y = expression(F / F[RMS]),
-       color = "Unidad") +
-  theme_minimal(base_size = 12) +
-  theme(legend.position = "none",
-        panel.grid = element_line(color = "gray92"))
-```
-
 <div class="figure">
 <img src="02-crustaceos_files/figure-html/fig-kobe-1.png" alt="Diagrama de Kobe para las pesquerías de crustáceos demersales chilenos. Fuente: CCT Crustáceos Demersales, Octubre 2020." width="768" />
 <p class="caption">(\#fig:fig-kobe)Diagrama de Kobe para las pesquerías de crustáceos demersales chilenos. Fuente: CCT Crustáceos Demersales, Octubre 2020.</p>
 </div>
-
-
-``` r
-est <- data.frame(
-  Especie = c("Langostino colorado","","Langostino amarillo","","Camaron nailon"),
-  Unidad  = c("UPN (II-IV R)","UPS (V-VIII R)",
-               "UPN (II-IV R)","UPS (V-VIII R)","Nacional"),
-  B_Brms  = c(1.2, 1.2, 1.7, 1.2, 1.3),
-  F_Frms  = c(0.9, 1.0, 0.8, 0.9, 0.6),
-  Estado  = rep("Plena explotacion", 5)
-)
-kable(est,
-      col.names = c("Especie","Unidad de pesqueria","B/B_RMS","F/F_RMS","Estado"),
-      caption = "Estado de situación de las pesquerías de crustáceos demersales. Fuente: CCT Crustáceos Demersales, Octubre 2020.") |>
-  kable_styling(bootstrap_options = c("striped","hover","condensed"), full_width = TRUE) |>
-  row_spec(0, background = "#1A3A5C", color = "white") |>
-  row_spec(c(1,2), background = "#FDEBD0") |>
-  row_spec(c(3,4), background = "#FEF9E7") |>
-  row_spec(5, background = "#EBF5FB")
-```
 
 <table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <caption>(\#tab:tabla-estatus)(\#tab:tabla-estatus)Estado de situación de las pesquerías de crustáceos demersales. Fuente: CCT Crustáceos Demersales, Octubre 2020.</caption>
@@ -458,13 +326,13 @@ Este capítulo presentó los fundamentos biológicos y el estado de las pesquer�
 
 4. Los incrementos de talla por muda del *Langostino colorado* son de 2,82 mm LC en la III Región y 3,35 mm LC en la IV Región. Si una hembra de la III Región tiene 20 mm LC al inicio de la temporada, ¿cuál sería su longitud esperada después de 3 mudas? ¿Y en la IV Región?
 
-5. Analice el gráfico de desembarque 2013–2023 de los crustáceos demersales. ¿Qué hipótesis explicativas podría plantear para la tendencia decreciente del langostino amarillo desde 2015?
+5. Analice el gráfico de desembarque 2013–2025 de los crustáceos demersales. ¿Qué hipótesis explicativas podría plantear para la tendencia decreciente del langostino amarillo desde 2015?
 
 6. ¿Qué significa que una unidad de pesquería esté en **Plena Explotación** según el diagrama de Kobe? ¿Qué decisión de manejo correspondería si la biomasa cayera por debajo de B_RMS?
 
 ### Nivel avanzado (síntesis y análisis)
 
-7. El camarón nailon presenta el mayor grado de estabilidad en sus desembarques (2013–2023) de las tres especies estudiadas. ¿Qué características biológicas y/o de manejo podrían explicar esta estabilidad relativa?
+7. El camarón nailon presenta el mayor grado de estabilidad en sus desembarques (2013–2025) de las tres especies estudiadas. ¿Qué características biológicas y/o de manejo podrían explicar esta estabilidad relativa?
 
 8. La talla de madurez del langostino colorado varía con la latitud: las hembras de la III Región maduran a tallas menores que las de la IV Región. Discuta las implicancias de este gradiente latitudinal para la definición de una talla mínima legal de captura uniforme a nivel nacional.
 
@@ -472,10 +340,10 @@ Este capítulo presentó los fundamentos biológicos y el estado de las pesquer�
 
 ## Referencias {#referencias-crustaceos}
 
-- FIP (2006). Proyecto FIP 2006-43: Estudio del crecimiento de crustáceos demersales. Fondo de Investigación Pesquera.
-- Flores, A.A.V., et al. (2020). Physiological vs. functional maturity in squat lobsters. *Marine Biology*.
-- Gallardo, C.S., et al. (2017). Reproductive cycle of *Pleuroncodes monodon* and environmental variability. *Progress in Oceanography*.
-- Palma, S. & Arana, P. (2000). Aspectos reproductivos del langostino colorado. *Investigaciones Marinas*, 28.
-- Roa, R. & Tapia, F. (2000). Spatial structure of the squat lobster *Pleuroncodes monodon*. *Fisheries Research*.
+- FIP (2006). Proyecto FIP 2006-43.
+- Flores, A.A.V., et al. (2020).
+- Gallardo, C.S., et al. (2017).
+- Palma, S. & Arana, P. (2000).
+- Roa, R. & Tapia, F. (2000).
 - SUBPESCA (2020). Informe Técnico: CCT Crustáceos Demersales. Octubre 2020. Subsecretaría de Pesca y Acuicultura.
-- Thiel, M., et al. (2012). Reproductive biology of squat lobsters. *In: Squat Lobsters: Biology and Fisheries of the Galatheidea and Chirostyloidea*. CSIRO Publishing.
+- Thiel, M., et al. (2012).
