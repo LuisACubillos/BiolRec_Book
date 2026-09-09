@@ -340,10 +340,10 @@ Este capítulo presentó los fundamentos biológicos y el estado de las pesquer�
 
 ## Referencias {#referencias-crustaceos}
 
-- FIP (2006). Proyecto FIP 2006-43.
-- Flores, A.A.V., et al. (2020).
-- Gallardo, C.S., et al. (2017).
-- Palma, S. & Arana, P. (2000).
-- Roa, R. & Tapia, F. (2000).
+- FIP (2006). Proyecto FIP 2006-43.Dinámica reproductiva de langostino colorado y langostino amarillo en la III y IV Regiones. Informe Final Proyecto FIP 2006-43. Universidad Católica del Norte, Coquimbo.
+- Flores, A., Brown, D. I., Queirolo, D., & Ahumada, M. (2020). Gonadal development of female red squat lobsters (Pleuroncodes monodon H Milne Edwards, 1837). Fisheries Research, 225, 105508. https://doi.org/10.1016/j.fishres.2020.105508
+- Gallardo, M. D., Paschke, K., Brokordt, K., Ramos, M., Thiel, M., Pizarro-Koch, M., & Yannicelli, B. (2025). Squat lobster latitudinal life habitat shifts and metabolic response to combined temperature and oxygen conditions in the Humboldt Current System. Scientific Reports, 15(1), 41981. https://doi.org/10.1038/s41598-025-25984-4
+- Palma, S., & Arana, P. (1997). Aspectos reproductivos del langostino colorado (Pleuroncodes monodon H. Milne Edwards, 1837), frente a la costa de Concepción, Chile. Investigaciones marinas, 25, 203-221.
+- Roa R, Tapia F (2000) Cohorts in space: geostatistical mapping of the age structure of the squat lobster Pleuroncodes monodon population off central Chile. Mar Ecol Prog Ser 196:239-251 https://doi.org/10.3354/meps196239
 - SUBPESCA (2020). Informe Técnico: CCT Crustáceos Demersales. Octubre 2020. Subsecretaría de Pesca y Acuicultura.
-- Thiel, M., et al. (2012).
+- Thiel, M., Espinoza-Fuenzalida, N. L., Acuña, E., & Rivadeneira, M. M. (2012). Annual brood number and breeding periodicity of squat lobsters (Decapoda: Anomura: Galatheidae) from the continental shelf of the SE Pacific—Implications for fisheries management. Fisheries Research, 129-130, 28-37. https://doi.org/10.1016/j.fishres.2012.06.004
