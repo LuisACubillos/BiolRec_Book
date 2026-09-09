@@ -14,7 +14,7 @@ Los recursos acuáticos renovables de interés pesquero se clasifican en tres gr
 - **Crustáceos**: invertebrados con exoesqueleto quitinoso; incluyen especies de alto valor comercial (langostinos, camarón, centolla).
 - **Moluscos**: bivalvos, gastrópodos y cefalópodos; destacan el loco (*Concholepas concholepas*), el ostión y el calamar.
 
-Este capítulo se enfoca en los **crustáceos demersales** de Chile, en particular los tres recursos de mayor importancia pesquera en la zona centro-norte.
+Este capítulo se enfoca en los **crustáceos demersales** de Chile, en particular los tres recursos de mayor importancia pesquera.
 
 ## Especies objetivo: crustáceos demersales {#especies-crustaceos}
 
@@ -38,21 +38,21 @@ Las pesquerías industriales de arrastre de fondo en Chile centro-norte se centr
    <td style="text-align:left;"> *Grimothea monodon* </td>
    <td style="text-align:left;"> Anomura, Munididae </td>
    <td style="text-align:left;"> 80–300 m </td>
-   <td style="text-align:left;"> II–VIII Region </td>
+   <td style="text-align:left;"> Arica &amp; Parinacota a Coquimbo </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Langostino amarillo </td>
    <td style="text-align:left;"> *Grimothea johni* </td>
    <td style="text-align:left;"> Anomura, Munididae </td>
    <td style="text-align:left;"> 80–400 m </td>
-   <td style="text-align:left;"> II–VIII Region </td>
+   <td style="text-align:left;"> Antofagasta al Biobió </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Camaron nailon </td>
    <td style="text-align:left;"> *Heterocarpus reedi* </td>
    <td style="text-align:left;"> Decapoda, Pandalidae </td>
    <td style="text-align:left;"> 100–400 m </td>
-   <td style="text-align:left;"> III–XI Region </td>
+   <td style="text-align:left;"> Atacama a Coquimbo </td>
   </tr>
 </tbody>
 </table>
@@ -89,7 +89,7 @@ Los **incrementos de talla por muda** medidos en campañas de laboratorio (FIP 2
 | *L. colorado* | 2,82 mm LC/muda | 3,35 mm LC/muda |
 | *L. amarillo* | 3,80 mm LC/muda | 4,20 mm LC/muda |
 
-La mayor tasa de incremento en la IV Región refleja diferencias en temperatura del agua y disponibilidad de alimento entre ambas zonas.
+La mayor tasa de incremento en Coquimbo refleja diferencias en temperatura del agua y disponibilidad de alimento entre ambas zonas.
 
 <div class="figure">
 <img src="02-crustaceos_files/figure-html/fig-freq-tallas-1.png" alt="Distribución de frecuencias de tallas de langostino colorado (datos ilustrativos). Cada componente normal representa un grupo de muda." width="672" />
@@ -105,7 +105,7 @@ La madurez sexual en langostinos se puede evaluar desde dos perspectivas complem
 
 Los estados macroscópicos de madurez en hembras (Flores et al. 2020) son: *Inactiva → Madura inactiva → Madura activa → Ovígera*. La distinción entre madurez fisiológica y funcional es importante para el manejo: una hembra puede estar fisiológicamente madura pero no haber completado aún su primer ciclo reproductivo.
 
-**Variación latitudinal de la talla de madurez en *L. colorado*:** las hembras de la III Región maduran a tallas menores que las de la IV Región (Palma y Arana, 2000). Esta diferencia tiene implicancias directas para la definición de la talla mínima legal de captura: una medida uniforme puede ser inadecuada si no considera la variación espacial en la biología reproductiva.
+**Variación latitudinal de la talla de madurez en *L. colorado*:** las hembras de la Región de Atacama maduran a tallas menores que las de la Región de Coquimbo (Palma y Arana, 1997). Esta diferencia tiene implicancias directas para la definición de la talla mínima legal de captura: una medida uniforme puede ser inadecuada si no considera la variación espacial en la biología reproductiva.
 
 **Fecundidad:**
 
@@ -126,7 +126,7 @@ El ciclo reproductivo de los langostinos está íntimamente vinculado a la muda 
 4. La **incubación** dura ~40 días a 11–13 °C en laboratorio.
 5. Tras la eclosión de las larvas, la hembra puede iniciar un nuevo ciclo de apareamiento en pocas horas.
 
-**Número de camadas:** una hembra de *L. amarillo* puede producir hasta 6 camadas sucesivas por temporada (mayormente 3–4); *L. colorado* hasta 5 (mayormente 3–4). Esta estrategia de *iteroparidad* (reproducción repetida en una temporada) maximiza la producción de larvas bajo condiciones ambientales favorables.
+**Frecuencia reproductiva:** una hembra de *L. amarillo* puede producir ser fecundada hasta 6 veces sucesivas por temporada (mayormente 3–4); *L. colorado* hasta 5 (mayormente 3–4). Esta estrategia de *iteroparidad* (reproducción repetida en una temporada) maximiza la producción de larvas bajo condiciones ambientales favorables.
 
 **Ciclo reproductivo de *L. colorado* (Gallardo et al. 2017):**
 
@@ -324,7 +324,7 @@ Este capítulo presentó los fundamentos biológicos y el estado de las pesquer�
 
 ### Nivel intermedio (aplicación)
 
-4. Los incrementos de talla por muda del *Langostino colorado* son de 2,82 mm LC en la III Región y 3,35 mm LC en la IV Región. Si una hembra de la III Región tiene 20 mm LC al inicio de la temporada, ¿cuál sería su longitud esperada después de 3 mudas? ¿Y en la IV Región?
+4. Los incrementos de talla por muda del *Langostino colorado* son de 2,82 mm LC en la Región de Atacama y 3,35 mm LC en la Región de Coquimbo. Si una hembra de la Región de Atacama tiene 20 mm LC al inicio de la temporada, ¿cuál sería su longitud esperada después de 3 mudas? ¿Y en la Región de Coquimbo?
 
 5. Analice el gráfico de desembarque 2013–2025 de los crustáceos demersales. ¿Qué hipótesis explicativas podría plantear para la tendencia decreciente del langostino amarillo desde 2015?
 
@@ -334,16 +334,21 @@ Este capítulo presentó los fundamentos biológicos y el estado de las pesquer�
 
 7. El camarón nailon presenta el mayor grado de estabilidad en sus desembarques (2013–2025) de las tres especies estudiadas. ¿Qué características biológicas y/o de manejo podrían explicar esta estabilidad relativa?
 
-8. La talla de madurez del langostino colorado varía con la latitud: las hembras de la III Región maduran a tallas menores que las de la IV Región. Discuta las implicancias de este gradiente latitudinal para la definición de una talla mínima legal de captura uniforme a nivel nacional.
+8. La talla de madurez del langostino colorado varía con la latitud: las hembras de la Región de Atacama maduran a tallas menores que las de la Región de Coquimbo. Discuta las implicancias de este gradiente latitudinal para la definición de una talla mínima legal de captura uniforme a nivel nacional.
 
 9. El ciclo reproductivo de *L. colorado* está acoplado a las variaciones de oxígeno y clorofila-a en la columna de agua (Gallardo et al. 2017). ¿Cómo podría afectar el cambio climático (calentamiento y expansión de la ZMO) al éxito reproductivo de esta especie?
 
 ## Referencias {#referencias-crustaceos}
 
 - FIP (2006). Proyecto FIP 2006-43.Dinámica reproductiva de langostino colorado y langostino amarillo en la III y IV Regiones. Informe Final Proyecto FIP 2006-43. Universidad Católica del Norte, Coquimbo.
+
 - Flores, A., Brown, D. I., Queirolo, D., & Ahumada, M. (2020). Gonadal development of female red squat lobsters (Pleuroncodes monodon H Milne Edwards, 1837). Fisheries Research, 225, 105508. https://doi.org/10.1016/j.fishres.2020.105508
-- Gallardo, M. D., Paschke, K., Brokordt, K., Ramos, M., Thiel, M., Pizarro-Koch, M., & Yannicelli, B. (2025). Squat lobster latitudinal life habitat shifts and metabolic response to combined temperature and oxygen conditions in the Humboldt Current System. Scientific Reports, 15(1), 41981. https://doi.org/10.1038/s41598-025-25984-4
+
+- Gallardo, M. D. L. Á., González López, A. E., Ramos, M., Mujica, A., Muñoz, P., Sellanes, J., & Yannicelli, B. (2017). Reproductive patterns in demersal crustaceans from the upper boundary of the OMZ off north-central Chile. Continental Shelf Research, 141, 26-37. https://doi.org/10.1016/j.csr.2017.04.011
+
 - Palma, S., & Arana, P. (1997). Aspectos reproductivos del langostino colorado (Pleuroncodes monodon H. Milne Edwards, 1837), frente a la costa de Concepción, Chile. Investigaciones marinas, 25, 203-221.
+
 - Roa R, Tapia F (2000) Cohorts in space: geostatistical mapping of the age structure of the squat lobster Pleuroncodes monodon population off central Chile. Mar Ecol Prog Ser 196:239-251 https://doi.org/10.3354/meps196239
+
 - SUBPESCA (2020). Informe Técnico: CCT Crustáceos Demersales. Octubre 2020. Subsecretaría de Pesca y Acuicultura.
 - Thiel, M., Espinoza-Fuenzalida, N. L., Acuña, E., & Rivadeneira, M. M. (2012). Annual brood number and breeding periodicity of squat lobsters (Decapoda: Anomura: Galatheidae) from the continental shelf of the SE Pacific—Implications for fisheries management. Fisheries Research, 129-130, 28-37. https://doi.org/10.1016/j.fishres.2012.06.004
