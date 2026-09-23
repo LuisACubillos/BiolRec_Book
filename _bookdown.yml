@@ -7,3 +7,4 @@ rmd_files:
   - index.Rmd
   - 01-introduccion.Rmd
   - 02-crustaceos.Rmd
+  - 03-crustaceos-bentonicos.Rmd
