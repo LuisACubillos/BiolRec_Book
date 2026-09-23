@@ -10,9 +10,6 @@ tab:tabla-estatus
 fig:fig-jaibas
 fig:fig-centoller
 tab:tabla-desemb-bent
-tab:tabla-pbr-bent
-fig:kobe-bent
-tab:tabla-estado-bent
 intro
 que-es
 definición-de-recurso
@@ -69,8 +66,6 @@ langostino-enano
 plasticidad-fenotípica-heterocrónica
 importancia-pesquera-del-langostino-enano
 desemb-bentonicos
-pbr-bent
-estado-bent
 sintesis-bent
 glosario-bent
 preguntas-bent
