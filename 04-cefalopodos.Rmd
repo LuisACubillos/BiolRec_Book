@@ -16,29 +16,7 @@ Los cefalópodos son moluscos altamente evolucionados que carecen de concha exte
 
 ### Taxonomía y distribución
 
-La jibia —también llamada pota o calamar de Humboldt— pertenece al orden Teuthida, familia Ommastrephidae. Es el calamar de mayor talla que habita el océano Pacífico oriental, con distribución desde Baja California (México) hasta las costas de Chile central (~45°S), extendiéndose en sentido transversal hasta las islas Galápagos e Hawái (Figura \@ref(fig:fig-jibia-dist)).
-
-```{r fig-jibia-dist, fig.cap="Distribución aproximada de *Dosidicus gigas* en el Pacífico oriental (área sombreada). La especie se asocia a la Corriente de Humboldt y a la Zona de Mínimo de Oxígeno. Basado en Gilly et al. (2006)."}
-library(maps)
-# Polígono aproximado de distribución de D. gigas en el Pacífico oriental
-dist_lon <- c(-120, -75, -75, -80, -90, -100, -110, -120, -120)
-dist_lat <- c(  25,  25,  -5, -15, -20,  -10,    5,   15,   25)
-
-op <- par(mar = c(3, 3, 1, 1), bg = "#F5F9FF")
-map("world", xlim = c(-130, -65), ylim = c(-55, 35),
-    col = "#CCCCCC", fill = TRUE, border = "white")
-polygon(dist_lon, dist_lat,
-        col  = adjustcolor("#2166AC", alpha.f = 0.3),
-        border = "#2166AC", lwd = 1.5, lty = 1)
-map.axes(cex.axis = 0.8)
-mtext("Longitud (°O)", side = 1, line = 2, cex = 0.8)
-mtext("Latitud",       side = 2, line = 2, cex = 0.8)
-legend("bottomleft",
-       legend = expression(italic("D. gigas")),
-       fill   = adjustcolor("#2166AC", alpha.f = 0.3),
-       border = "#2166AC", bty = "n", cex = 0.85)
-par(op)
-```
+La jibia —también llamada pota o calamar de Humboldt— pertenece al orden Teuthida, familia Ommastrephidae. Es el calamar de mayor talla que habita el océano Pacífico oriental, con distribución desde Baja California (México) hasta las costas de Chile central (~45°S), extendiéndose en sentido transversal hasta las islas Galápagos e Hawái.
 
 ### Morfología y tallas
 
@@ -240,7 +218,6 @@ kbl(sint,
 
 Gilly, W. F., Markaida, U., Baxter, C. H., Block, B. A., Boustany, A., Zeidberg, L., … Salinas, C. (2006). Vertical and horizontal migrations by the jumbo squid *Dosidicus gigas* revealed by electronic tagging. *Marine Ecology Progress Series*, **324**, 1–17. https://doi.org/10.3354/meps324001
 
-Goicochea-Vigo, C., Salinas-Zavala, C. A., Mori, J., Tresierra-Aguilar, A., & Tresierra-Espinoza, L. (2019). Age and growth of the jumbo flying squid (*Dosidicus gigas*) in Peruvian waters. *Aquaculture and Fisheries*, **4**(2), 73–82. https://doi.org/10.1016/j.aaf.2018.12.003
 
 Keyl, F., Argüelles, J., Mariátegui, L., Tafur, R., Wolff, M., & Yamashiro, C. (2008). A hypothesis on range expansion and spatio-temporal shifts in size-at-maturity of jumbo squid (*Dosidicus gigas*) in the Eastern Pacific Ocean. *CalCOFI Reports*, **49**, 119–128.
 
@@ -248,4 +225,3 @@ Markaida, U., & Sosa-Nishizaki, O. (2003). Food and feeding habits of jumbo squi
 
 SERNAPESCA (2025). *Anuario Estadístico de Pesca 2025. Series 2015–2025*. Servicio Nacional de Pesca y Acuicultura, Valparaíso, Chile.
 
-Warnke, K., Söller, R., Blohm, D., & Saint-Paul, U. (2004). A new approach to the molecular phylogeny of *Octopus* and related genera. *Journal of Molluscan Studies*, **70**(4), 343–355.
