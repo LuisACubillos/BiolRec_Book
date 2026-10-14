@@ -15,7 +15,8 @@ Apuntes y guías de estudio de la asignatura Biología de Recursos Pesqueros, pu
 | Prefacio | Presentación del libro y cómo usarlo | ✅ |
 | Clase 1 | Introducción a los Recursos Marinos | ✅ |
 | Clase 2 | Recursos Acuáticos Renovables: Crustáceos Demersales | ✅ |
-| Clase 3 | Dinámica poblacional — modelos de crecimiento y mortalidad | 🔜 |
+| Clase 3 | Crustáceos Bentónicos: Centolla, Centollón, Jaibas y Langostino Enano | ✅ |
+| Clase 4 | Cefalópodos: Jibia y Pulpo Común | ✅ |
 
 ## 📁 Estructura del repositorio
 
@@ -26,6 +27,8 @@ BiolRec_Book/
 ├── index.Rmd              # Portada y prefacio
 ├── 01-introduccion.Rmd    # Clase 1: Introducción a los Recursos Marinos
 ├── 02-crustaceos.Rmd      # Clase 2: Crustáceos Demersales
+├── 03-crustaceos-bentonicos.Rmd  # Clase 3: Crustáceos Bentónicos
+├── 04-cefalopodos.Rmd     # Clase 4: Jibia y Pulpo Común
 ├── estilos/book.css       # Hoja de estilos
 ├── referencias.bib        # Bibliografía BibTeX
 └── .github/workflows/     # GitHub Actions (publicación automática)

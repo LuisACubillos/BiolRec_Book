@@ -8,3 +8,4 @@ rmd_files:
   - 01-introduccion.Rmd
   - 02-crustaceos.Rmd
   - 03-crustaceos-bentonicos.Rmd
+  - 04-cefalopodos.Rmd
