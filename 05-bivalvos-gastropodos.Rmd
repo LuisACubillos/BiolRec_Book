@@ -32,11 +32,12 @@ Son dioicos con fecundación externa masiva en la columna de agua. La larva pel�
 
 #### Hipótesis de cambio climático sobre captación de semillas
 
-Investigaciones recientes (Soto et al., INCAR) plantean que el calentamiento oceánico y el aumento de salinidad en los fiordos patagónicos —producto de la reducción del derretimiento glaciar— podrían alterar el transporte larval y reducir el éxito de captación de semillas en colectores artificiales. La hipótesis central señala que:
+Investigaciones recientes (Molinet et al., 2021, 2025) plantean que el calentamiento oceánico y el aumento de salinidad en los fiordos patagónicos —producto de la reducción del derretimiento glaciar— podrían alterar el transporte larval y reducir el éxito de captación de semillas en colectores artificiales. La hipótesis central señala que:
 
 - La estratificación halocional de los fiordos actúa como barrera para el transporte de larvas desde áreas de desove hacia las zonas de captación.
 - El aumento de temperatura superficial puede acelerar la metamorfosis larval, reduciendo la ventana de captación.
 - La proliferación de floraciones algales nocivas (FAN), favorecida por condiciones más cálidas y estratificadas, puede causar mortalidad larval masiva.
+- La sobreexplotación de semilla silvestre en bancos naturales reduce el stock reproductor que aporta larvas al sistema, lo que, sumado a los cambios en los aportes de agua dulce a los fiordos, podría comprometer el abastecimiento de semilla para la mitilicultura (Molinet et al., 2025).
 
 Estas proyecciones tienen implicaciones directas para la sustentabilidad de la mitilicultura en el sur de Chile, que depende en un porcentaje significativo de semilla silvestre.
 
@@ -333,13 +334,15 @@ kbl(sint, booktabs = TRUE, escape = FALSE,
 
 Jerez, G., Ariz, L., & Melo, T. (2000). Evaluación del recurso taca (*Protothaca thaca*) en la I, II y III Regiones. *Informe Técnico IFOP*, Valparaíso.
 
+Molinet, C., Astorga, M., Cares, L., Díaz, M., Hueicha, K., Marín, S., Matamala, T., & Soto, D. (2021). Vertical distribution patterns of larval supply and spatfall of three species of Mytilidae in a Chilean fjord used for mussel farming: Insights for mussel spatfall efficiency. *Aquaculture*, **535**, 736341. https://doi.org/10.1016/j.aquaculture.2021.736341
+
+Molinet, C., Soto, D., León-Muñoz, J., et al. (2025). Climate-driven changes in freshwater inputs to a Northern Patagonia fjord and overfishing of wild mussel seed could threaten Chilean mussel farming. *Climatic Change*, **178**, 119. https://doi.org/10.1007/s10584-025-03956-x
+
 Moreno, C. A., Sutherland, J. P., & Jara, H. F. (1984). Man as a predator in the intertidal zone of Southern Chile. *Oikos*, **42**(2), 155–160.
 
 Navarrete, S. A., & Castilla, J. C. (1990). Barnacle walls as mediators of intertidal mussel recruitment: effects of patch density and adult mussel size. *Journal of Experimental Marine Biology and Ecology*, **138**(1–2), 137–150.
 
 SERNAPESCA (2025). *Anuario Estadístico de Pesca 2025. Series 2015–2025*. Servicio Nacional de Pesca y Acuicultura, Valparaíso, Chile.
-
-Soto, D., Norambuena, F., & Riquelme, C. (2024). Impactos del cambio climático en la mitilicultura en fiordos patagónicos: hipótesis y evidencia emergente. *INCAR — Informe de Avance*, Concepción.
 
 Stotz, W. (2000). When aquaculture restores and replaces an overfished stock: is the conservation of the species assured? The case of the loco *Concholepas concholepas* in Chile. *Aquaculture International*, **8**(2–3), 237–247.
 
