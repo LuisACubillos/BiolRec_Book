@@ -13,7 +13,6 @@ tab:tabla-desemb-bent
 fig:fig-desembarques-cef
 tab:tab-desembarques-cef
 tab:tab-sintesis-cef
-fig:fig-interaccion-alga
 fig:fig-desem-biv
 tab:tab-desem-biv
 tab:tab-sintesis-biv
@@ -111,7 +110,7 @@ ciclo-de-vida
 mytilus-chilensis-chorito
 hipótesis-de-cambio-climático-sobre-captación-de-semillas
 choromytilus-chorus-choro-zapato
-aulacomya-ater-cholga
+aulacomya-atra-cholga
 navajuelas
 tagelus-dombeii-navajuela
 ensis-macha-huepo-o-navaja-de-mar
@@ -125,7 +124,7 @@ ciclo-de-vida-1
 crecimiento-y-talla-mínima-legal
 gestión-áreas-de-manejo-amerb
 locate
-navajuela-gastrópodo-y-recursos-menores
+otros-gastrópodos-explotados
 desem-bivalvos
 sintesis-biv
 glosario-biv
