@@ -2,8 +2,9 @@
 
 
 
-Los moluscos representan el segundo grupo más grande de animales en las costas chilenas, con aproximadamente 230 especies de bivalvos distribuidas en 51 familias. Son componentes clave de las pesquerías bentónicas y de la acuicultura nacional: en 2021, los moluscos aportaron más de 520.000 toneladas al desembarque total chileno (incluyendo las cosechas de centros de cultivo), siendo el **chorito** (*Mytilus chilensis*) el recurso dominante con ~82% del volumen.
-<!-- VERIFICAR: cifras de 2021 (520.000 t, 82 %) y n.º de especies/familias contra SERNAPESCA y literatura. --> La clase Bivalvia y la clase Gastropoda incluyen especies de importancia ecológica, cultural y económica que van desde mitílidos de cultivo hasta gastrópodos de crecimiento lento gestionados en Áreas de Manejo.
+Los moluscos representan el segundo grupo más grande de animales en las costas chilenas, con aproximadamente 230 especies de bivalvos distribuidas en 51 familias. Son componentes clave de las pesquerías bentónicas y de la acuicultura nacional: en 2021, los moluscos aportaron más de 520.000 toneladas al desembarque total chileno (incluyendo las cosechas de centros de cultivo), siendo el **chorito** (*Mytilus chilensis*) el recurso dominante.
+
+La clase Bivalvia y la clase Gastropoda incluyen especies de importancia ecológica, cultural y económica que van desde mitílidos de cultivo hasta gastrópodos de crecimiento lento gestionados en Áreas de Manejo.
 
 ## Bivalvos {#bivalvos}
 
