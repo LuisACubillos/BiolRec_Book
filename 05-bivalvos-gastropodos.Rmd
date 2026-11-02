@@ -30,16 +30,17 @@ Son dioicos con fecundación externa masiva en la columna de agua. La larva pel�
 
 **Sistema de cultivo**: La mitilicultura chilena opera con el sistema *long line* (cabos colectores suspendidos de líneas flotantes). Las principales etapas son: (1) captación de semilla natural en colectores artificiales (cuerdas de polipropileno), (2) desdoble y resiembra en cuerdas de cultivo, y (3) cosecha con canastas o cuerdas al alcanzar la talla comercial. Los centros productivos se concentran entre Puerto Montt y la Isla Grande de Chiloé.
 
+La captación de semilla en colectores artificiales sustenta una producción cercana a 350.000 t anuales de chorito, en lo que se conoce como *acuicultura basada en captura* (CBA). En el fiordo Reloncaví, una de las principales áreas de captación del país, Molinet et al. (2021) estudiaron la distribución vertical del aporte larval y del asentamiento de *Mytilus chilensis*, *Aulacomya atra* y *Choromytilus chorus* entre 0 y 13 m de profundidad. Las larvas competentes se distribuyeron en toda la columna de agua sin patrones claros, a pesar de la alta variabilidad en temperatura, salinidad y oxígeno disuelto. En cambio, el asentamiento, inicialmente homogéneo, se estratificó después de seis meses: *M. chilensis* dominó entre 0 y 7 m y *A. atra* entre 7 y 13 m. En ambas especies se perdió cerca del 90 % de la semilla respecto de su abundancia máxima (retención menor al 10 %), lo que indica una baja eficiencia de la captación y la necesidad de monitorear el asentamiento y su relación con los bancos naturales cercanos.
+
 #### Hipótesis de cambio climático sobre captación de semillas
 
-Investigaciones recientes (Molinet et al., 2021, 2025) plantean que el calentamiento oceánico y el aumento de salinidad en los fiordos patagónicos —producto de la reducción del derretimiento glaciar— podrían alterar el transporte larval y reducir el éxito de captación de semillas en colectores artificiales. La hipótesis central señala que:
+Chile es el principal exportador mundial de choritos cultivados, con cosechas de alrededor de 400.000 t anuales que dependen de la captación de semilla silvestre. Molinet et al. (2025) analizaron la dinámica vertical de los bancos naturales de mitílidos en el fiordo Reloncaví en relación con los aportes de agua dulce, la salinidad y el régimen hidrológico. Sus resultados plantean que:
 
-- La estratificación halocional de los fiordos actúa como barrera para el transporte de larvas desde áreas de desove hacia las zonas de captación.
-- El aumento de temperatura superficial puede acelerar la metamorfosis larval, reduciendo la ventana de captación.
-- La proliferación de floraciones algales nocivas (FAN), favorecida por condiciones más cálidas y estratificadas, puede causar mortalidad larval masiva.
-- La sobreexplotación de semilla silvestre en bancos naturales reduce el stock reproductor que aporta larvas al sistema, lo que, sumado a los cambios en los aportes de agua dulce a los fiordos, podría comprometer el abastecimiento de semilla para la mitilicultura (Molinet et al., 2025).
+- El cambio climático ha reducido la precipitación anual y, con ello, los aportes de agua dulce al fiordo, lo que aumenta la salinidad de la columna de agua, especialmente en superficie.
+- Este aumento de salinidad superficial podría reducir los bancos de *M. chilensis* y favorecer a su competidor *Aulacomya atra*, con efectos negativos sobre la captación de semilla silvestre.
+- Al mismo tiempo, la presión de pesca sobre la semilla silvestre va en aumento. Los efectos combinados del cambio climático y de esta presión no pueden separarse con la información disponible, lo que constituye un desafío clave para diseñar medidas de adaptación.
 
-Estas proyecciones tienen implicaciones directas para la sustentabilidad de la mitilicultura en el sur de Chile, que depende en un porcentaje significativo de semilla silvestre.
+Estas proyecciones amenazan a la mitilicultura chilena y tendrían consecuencias socioeconómicas para la acuicultura de pequeña escala. Los autores destacan la necesidad de monitorear en conjunto los bancos naturales, la producción de semilla y las condiciones oceanográficas, y de mejorar las prácticas de cultivo para reducir la presión innecesaria que la captación de semilla ejerce sobre los bancos naturales.
 
 #### Choromytilus chorus — Choro zapato
 
