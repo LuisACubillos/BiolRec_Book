@@ -17,6 +17,7 @@ Apuntes y guías de estudio de la asignatura Biología de Recursos Pesqueros, pu
 | Clase 2 | Recursos Acuáticos Renovables: Crustáceos Demersales | ✅ |
 | Clase 3 | Crustáceos Bentónicos: Centolla, Centollón, Jaibas y Langostino Enano | ✅ |
 | Clase 4 | Cefalópodos: Jibia y Pulpo Común | ✅ |
+| Clase 5 | Moluscos Bivalvos y Gastrópodos | ✅ |
 
 ## 📁 Estructura del repositorio
 
