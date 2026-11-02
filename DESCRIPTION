@@ -9,4 +9,5 @@ Imports:
     scales,
     knitr,
     kableExtra,
+    patchwork,
     rmarkdown
