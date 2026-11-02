@@ -10,8 +10,9 @@ library(scales)
 library(kableExtra)
 ```
 
-Los moluscos representan el segundo grupo más grande de animales en las costas chilenas, con aproximadamente 230 especies de bivalvos distribuidas en 51 familias. Son componentes clave de las pesquerías bentónicas y de la acuicultura nacional: en 2021, los moluscos aportaron más de 520.000 toneladas al desembarque total chileno (incluyendo las cosechas de centros de cultivo), siendo el **chorito** (*Mytilus chilensis*) el recurso dominante con ~82% del volumen.
-<!-- VERIFICAR: cifras de 2021 (520.000 t, 82 %) y n.º de especies/familias contra SERNAPESCA y literatura. --> La clase Bivalvia y la clase Gastropoda incluyen especies de importancia ecológica, cultural y económica que van desde mitílidos de cultivo hasta gastrópodos de crecimiento lento gestionados en Áreas de Manejo.
+Los moluscos representan el segundo grupo más grande de animales en las costas chilenas, con aproximadamente 230 especies de bivalvos distribuidas en 51 familias. Son componentes clave de las pesquerías bentónicas y de la acuicultura nacional: en 2021, los moluscos aportaron más de 520.000 toneladas al desembarque total chileno (incluyendo las cosechas de centros de cultivo), siendo el **chorito** (*Mytilus chilensis*) el recurso dominante.
+
+La clase Bivalvia y la clase Gastropoda incluyen especies de importancia ecológica, cultural y económica que van desde mitílidos de cultivo hasta gastrópodos de crecimiento lento gestionados en Áreas de Manejo.
 
 ## Bivalvos {#bivalvos}
 
@@ -138,7 +139,6 @@ Además del locate, en las costas chilenas se explotan otros gastrópodos como e
 anios <- 2015:2025
 
 # Bivalvos (t) — SERNAPESCA
-# VERIFICAR: contrastar cada serie con los anuarios de SERNAPESCA
 chorito   <- c(290291, 302777, 341044, 399665, 380496, 400304, 425833, 427884, 390505, 406979, 340549)
 choro     <- c(  2577,   2339,   3452,   3340,   3121,   2593,   2550,   2315,   2501,   2425,   2679)
 cholga    <- c(  7155,   8491,   8526,   8935,   6817,   6314,   6191,   6784,   5911,   5104,   3491)
