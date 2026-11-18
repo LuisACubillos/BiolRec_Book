@@ -18,6 +18,7 @@ Apuntes y guías de estudio de la asignatura Biología de Recursos Pesqueros, pu
 | Clase 3 | Crustáceos Bentónicos: Centolla, Centollón, Jaibas y Langostino Enano | ✅ |
 | Clase 4 | Cefalópodos: Jibia y Pulpo Común | ✅ |
 | Clase 5 | Moluscos Bivalvos y Gastrópodos | ✅ |
+| Clase 6 | Peces Pelágicos: Anchoveta, Sardina Común, Jurel y Caballa | ✅ |
 
 ## 📁 Estructura del repositorio
 
@@ -30,6 +31,8 @@ BiolRec_Book/
 ├── 02-crustaceos.Rmd      # Clase 2: Crustáceos Demersales
 ├── 03-crustaceos-bentonicos.Rmd  # Clase 3: Crustáceos Bentónicos
 ├── 04-cefalopodos.Rmd     # Clase 4: Jibia y Pulpo Común
+├── 05-bivalvos-gastropodos.Rmd  # Clase 5: Bivalvos y Gastrópodos
+├── 06-peces-pelagicos.Rmd # Clase 6: Peces Pelágicos
 ├── estilos/book.css       # Hoja de estilos
 ├── referencias.bib        # Bibliografía BibTeX
 └── .github/workflows/     # GitHub Actions (publicación automática)
